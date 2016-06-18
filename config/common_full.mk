@@ -1,12 +1,12 @@
-# Inherit common CM stuff
-$(call inherit-product, vendor/cm/config/common.mk)
+# Inherit common liquid stuff
+$(call inherit-product, vendor/liquid/config/common.mk)
 
 PRODUCT_SIZE := full
 
-# Include CM audio files
-include vendor/cm/config/cm_audio.mk
+# Include liquid audio files
+include vendor/liquid/config/liquid_audio.mk
 
-# Optional CM packages
+# Optional liquid packages
 PRODUCT_PACKAGES += \
     Galaxy4 \
     HoloSpiralWallpaper \
@@ -20,7 +20,7 @@ PRODUCT_PACKAGES += \
     PhotoPhase \
     Screencast
 
-# Extra tools in CM
+# Extra tools in liquid
 PRODUCT_PACKAGES += \
     7z \
     lib7z \
